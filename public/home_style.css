@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+.my{
+    background-color:rgba(4, 59, 23, 0.821);
+}
+.my2{
+    display: flex;
+    justify-content:right;
+    padding:10px;
+    margin-right: 60px;
+    
+}
+a.nav_link:link,a.nav_link:visited{
+    color:white;
+    margin:9px;
+    text-decoration: none;
+    font: size 18px;
+    padding:12px;
+    margin-right:20px;
+}
+ a.nav_link:hover{
+    color:white;
+    margin:9px;
+    padding:12px;
+    text-decoration: none;
+    font: size 18px;
+    background-color:rgb(92, 67, 67);
+    margin-right:20px;
+
+} 
+.yo{
+    color:#f9faf8;
+    padding-top:10px;
+    text-align:center;
+    font-size:18px;
+    background-color: #3882F6;
+    margin-right:530px;
+    width:15%;
+    height:40px;
+    border:3px solid black;
+    border-radius:25px;
+}
+/* .my2{
+    margin-right:150px;
+   
+} */
+.overall{
+    padding: 40px;
+    padding-top:50px;
+    display:flex;
+}
+.sec_text{
+    width:50%;
+    color:white;
+    margin-top:0;
+    font-size: 18px;
+    margin-left:200px;
+}
+.main_text{
+    font-size: 48px;
+    margin-bottom:0;
+    color:#f9faf8;
+    font-weight:bolder;
+    width:70%;
+    margin-left:200px;
+}
+.myImage{
+    width:70%;
+    height: 250px;
+    margin-right:50px;
+    
+}
+a.button:link,a.button:visited{
+    margin-left:200px;
+    margin-top:100px;
+    background-color:#3882F6;
+    padding:10px;
+    text-align:center;
+    width:40%;
+    color:#f9faf8;
+    font-weight:bolder;
+    text-decoration: none;
+}
+.images button{
+    padding:20px;
+    padding-left:0px;
+    margin:10px;
+    width:22%
+}
+.images button:hover{
+    background-color:#98450a;
+}
+h2{
+    background-color: #f9faf8;
+    text-align: center;
+    margin-top:100px;
+    margin-left:auto;
+    margin-right:auto;
+    width:35%;
+    padding: 10px;
+    background-color: #67b31b;
+}
+
+.images {
+    display: flex;
+    justify-content:space-evenly;
+    flex:auto;
+    margin-left:auto;
+    margin-right:70px;
+    height:300px;
+    margin-top: 20px;
+} 
+
+
+.images img{
+    width:80%;
+    height:200px;
+    margin-left: 30px;
+  }
+  .images p{
+    width:10 px;
+    height:30px;
+    margin-left: 30px;
+    text-align:center;
+    background-color: #67b31b;
+    font-size:25px;
+  }
+
+
+.contact{
+    background-color:#3882F6;
+    margin:0 200px;
+    padding:20px;
+    text-align: center;
+    color: aliceblue;
+    border-radius:7px;
+    font-size: larger;
+    font-weight: bold;
+}
+a.required:link,a.required:visited{
+     text-decoration:none ;
+     color:#f9faf8;
+     margin-top:100px;
+     padding: 15px;
+     border: #f9faf8 solid 5px;
+}

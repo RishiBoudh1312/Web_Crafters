@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medicines.css">
+    <style>
+        body{
+            background-image:url('images/venti.png');
+            background-size: cover;
+        }
+    </style>
+    
+    <!-- <script src="medicine.js"></script> -->
+     <script>
+        function submitForm(operation, id) {
+            // Prompt user for input
+            const amount = prompt(`Enter the amount to ${operation}:`);
+
+            if (amount && !isNaN(amount)) {
+                // Create a form dynamically
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = '/updateVentilator';
+
+                // Add hidden inputs for ID, amount, and operation
+                const idInput = document.createElement('input');
+                idInput.type = 'hidden';
+                idInput.name = 'id';
+                idInput.value = id;
+
+                const amountInput = document.createElement('input');
+                amountInput.type = 'hidden';
+                amountInput.name = 'amount';
+                amountInput.value = amount;
+
+                const operationInput = document.createElement('input');
+                operationInput.type = 'hidden';
+                operationInput.name = 'operation';
+                operationInput.value = operation;
+
+                // Append inputs to the form
+                form.appendChild(idInput);
+                form.appendChild(amountInput);
+                form.appendChild(operationInput);
+
+                // Append form to the body and submit
+                document.body.appendChild(form);
+                form.submit();
+            } else {
+                alert("Please enter a valid number.");
+            }
+        }
+     </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="med-container">
+        <header>
+            <h1>Ventilators</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <div class="data">
+                <button class="data-button">View Data Records</button>
+            </div>
+        </header>
+        <% let list = ['A', 'B', 'C', 'D']; %>
+       <span>
+        <% for(let i=0; i<4;i++) { %>
+          <span><h2>Ventilator <%=list[i] %><span id="amount-<%= i %>"><%=current[i].currentamount%></span></h2> 
+           <button onclick="submitForm('add', <%= current[i].id %>)">+</button>
+            <button onclick="submitForm('subtract', <%= current[i].id %>)">-</button>
+        
+        <% } %>
+    </span>
+</body>
+</html>
