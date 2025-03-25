@@ -1,4 +1,4 @@
-# WebCrafters Medical Inventory Management System
+# MediWare - Medical Inventory Management System
 
 A web-based application for managing medical equipment inventory, built with Node.js, Express, and PostgreSQL.
 
@@ -31,7 +31,7 @@ A web-based application for managing medical equipment inventory, built with Nod
 1. Clone the repository:
 ```bash
 git clone [repository-url]
-cd WebCrafters
+cd MediWare
 ```
 
 2. Install dependencies:
@@ -53,7 +53,7 @@ The server will start running on port 5000.
 ## Project Structure
 
 ```
-WebCrafters/
+MediWare/
 ├── public/          # Static files (CSS, JS, images)
 ├── views/           # EJS template files
 ├── index.js         # Main application file
